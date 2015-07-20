@@ -11,7 +11,7 @@ class DinorbTask extends DefaultTask {
   def test(): Unit = {
     val maybeExt: Option[DinorbPluginExtension] = Option(getProject.getExtensions
       .findByType[DinorbPluginExtension](classOf[DinorbPluginExtension]))
-
+    println("Ok there...")
     maybeExt flatMap (ext => Some(println(ext.message)))
   }
 }

@@ -8,7 +8,7 @@ import org.gradle.api.{Project, Plugin}
 class DinorbPlugin extends Plugin[Project] {
 
   def apply(project: Project): Unit = {
-    project.getExtensions().create("dinorbSetting", classOf[DinorbPluginExtension]);
-    project.getTasks().create("demo", classOf[DinorbTask]);
+    project.getExtensions().create("dinorbSetting", classOf[DinorbPluginExtension])
+    project.getTasks().create("demo", classOf[DinorbTask])
   }
 }
